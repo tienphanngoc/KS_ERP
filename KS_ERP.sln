@@ -14,9 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Host", "3. Host", "{93063002-DCD1-4007-B2FA-7A0D8B3872CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSERP.Utilities", "KSERPUtilities\KSERP.Utilities.csproj", "{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KSERP.Utilities", "KSERPUtilities\KSERP.Utilities.csproj", "{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSERP.ViewModels", "KSERP.ViewModels\KSERP.ViewModels.csproj", "{28C36B0B-768D-421F-BC29-D9C871418F0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KSERP.ViewModels", "KSERP.ViewModels\KSERP.ViewModels.csproj", "{28C36B0B-768D-421F-BC29-D9C871418F0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSERP.Data", "KSERP.Data\KSERP.Data.csproj", "{F7B219EC-8FD8-46FA-A544-5A3A2107B4AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{28C36B0B-768D-421F-BC29-D9C871418F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28C36B0B-768D-421F-BC29-D9C871418F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28C36B0B-768D-421F-BC29-D9C871418F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B219EC-8FD8-46FA-A544-5A3A2107B4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B219EC-8FD8-46FA-A544-5A3A2107B4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B219EC-8FD8-46FA-A544-5A3A2107B4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B219EC-8FD8-46FA-A544-5A3A2107B4AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF} = {E09EEF4A-2595-41FC-BC24-0AEC26810090}
 		{28C36B0B-768D-421F-BC29-D9C871418F0C} = {E09EEF4A-2595-41FC-BC24-0AEC26810090}
+		{F7B219EC-8FD8-46FA-A544-5A3A2107B4AA} = {8D153865-2995-4688-A417-B19F140E5F6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9700785-1B61-45DF-B0EA-CAD13925A620}
