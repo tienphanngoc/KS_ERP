@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Host", "3. Host", "{93063002-DCD1-4007-B2FA-7A0D8B3872CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSERPUtilities", "KSERPUtilities\KSERPUtilities.csproj", "{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSERP.Utilities", "KSERPUtilities\KSERP.Utilities.csproj", "{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
