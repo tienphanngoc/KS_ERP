@@ -14,9 +14,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Host", "3. Host", "{93063002-DCD1-4007-B2FA-7A0D8B3872CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSERPUtilities", "KSERPUtilities\KSERPUtilities.csproj", "{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C60E6B3-B196-43B9-BE4F-B05F1D19D3FF} = {E09EEF4A-2595-41FC-BC24-0AEC26810090}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9700785-1B61-45DF-B0EA-CAD13925A620}
