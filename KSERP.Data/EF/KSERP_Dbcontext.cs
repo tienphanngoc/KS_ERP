@@ -26,6 +26,8 @@ namespace KSERP.Data.EF
         {
             modelBuilder.ApplyConfiguration(new BrandConfigurations());
             modelBuilder.ApplyConfiguration(new CarCategoryConfigurations());
+            modelBuilder.ApplyConfiguration(new CarColorConfigurations());
+            modelBuilder.ApplyConfiguration(new CarCategoryColorConfigurations());
         }
         public DbSet<Brand> Brands { get; set; }
 

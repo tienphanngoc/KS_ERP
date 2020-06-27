@@ -4,16 +4,16 @@ using System.Text;
 
 namespace KSERP.Data.Entities.Car
 {
-    public class CarCategory
+    public class CarColor
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int BrandId { get; set; }
+        public string EnglishName { get; set; }
+        public string HEXCode { get; set; }
 
         //Navigations
-        public virtual Brand Brand { get; set; }
         public virtual HashSet<CarCategoryColor> CarCategoryColors { get; set; }
-        public CarCategory()
+        public CarColor()
         {
             CarCategoryColors = new HashSet<CarCategoryColor>();
         }
