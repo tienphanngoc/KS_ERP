@@ -18,6 +18,7 @@ namespace KSERP.Data.Entities.Sales
         public DateTime DoB { get; set; }
         public string Job { get; set; }
         public int CurrentSalesCareId { get; set; }
+        public string Note { get; set; }
         //Navigations
         public virtual Employee CurrentSalesCare { get; set; }
         public virtual HashSet<CustomerCareHistory> CustomerCareHistories { get; set; }

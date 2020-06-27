@@ -20,6 +20,7 @@ namespace KSERP.Data.Configurations.Sales
             builder.Property(e => e.Job).HasMaxLength(150);
             builder.Property(e => e.PhoneNumber1).HasMaxLength(15);
             builder.Property(e => e.PhoneNumber2).HasMaxLength(15);
+            builder.Property(e => e.Note).HasMaxLength(250);
             builder.HasOne(e => e.CurrentSalesCare).WithMany(e => e.Customers).HasForeignKey(e => e.CurrentSalesCareId);
         }
     }
