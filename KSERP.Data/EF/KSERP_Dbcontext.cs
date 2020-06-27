@@ -1,6 +1,7 @@
 ﻿using KSERP.Data.Configurations;
 using KSERP.Data.Configurations.Car;
 using KSERP.Data.Configurations.Organization;
+using KSERP.Data.Configurations.Sales;
 using KSERP.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -42,6 +43,9 @@ namespace KSERP.Data.EF
             modelBuilder.ApplyConfiguration(new PositionConfigurations());
             modelBuilder.ApplyConfiguration(new EmployeeConfigurations());
             modelBuilder.ApplyConfiguration(new PositionEmployeeConfigurations());
+
+            //Sales
+            modelBuilder.ApplyConfiguration(new CustomerConfigurations());
         }
         public DbSet<Brand> Brands { get; set; }
 

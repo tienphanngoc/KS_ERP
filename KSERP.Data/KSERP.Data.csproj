@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200627151412_Add_Customer_Entity.cs" />
+    <Compile Remove="Migrations\20200627151412_Add_Customer_Entity.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Entities\System\" />
-    <Folder Include="Entities\Sales\" />
     <Folder Include="Extentions\" />
   </ItemGroup>
 
