@@ -13,6 +13,7 @@ namespace KSERP.Data.Configurations
         {
             builder.ToTable("Brands");
             builder.HasKey(e => e.Id);
+            builder.Property(e => e.Id).UseIdentityColumn();
             builder.Property(e => e.Name).HasMaxLength(50).IsRequired();
             builder.Property(e => e.Logo).HasMaxLength(150).IsRequired();
         }
