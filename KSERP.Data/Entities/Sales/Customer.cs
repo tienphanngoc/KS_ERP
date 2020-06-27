@@ -1,10 +1,11 @@
 ﻿using KSERP.Data.Entities.Oganization;
 using KSERP.Data.Enums;
 using System;
+using System.Collections.Generic;
 
 namespace KSERP.Data.Entities.Sales
 {
-    public class Customer
+    public class Customer : TracableEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -19,11 +20,13 @@ namespace KSERP.Data.Entities.Sales
         public int CurrentSalesCareId { get; set; }
         //Navigations
         public virtual Employee CurrentSalesCare { get; set; }
+        public virtual HashSet<CustomerCareHistory> CustomerCareHistories { get; set; }
 
         public Customer()
         {
             CustomerProspect = CustomerProspects.COLD;
             CustomerSource = CustomerSources.OTHER;
+            CustomerCareHistories = new HashSet<CustomerCareHistory>();
         }
 
     }

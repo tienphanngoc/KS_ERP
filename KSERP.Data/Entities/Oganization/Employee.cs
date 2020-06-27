@@ -26,10 +26,12 @@ namespace KSERP.Data.Entities.Oganization
         //Navigation
         public virtual HashSet<PositionEmployee> PositionEmployees { get; set; }
         public virtual HashSet<Customer> Customers { get; set; }
+        public virtual HashSet<CustomerCareHistory> CustomerCareHistories { get; set; }
         public Employee()
         {
             PositionEmployees = new HashSet<PositionEmployee>();
             Customers = new HashSet<Customer>();
+            CustomerCareHistories = new HashSet<CustomerCareHistory>();
         }
     }
 }

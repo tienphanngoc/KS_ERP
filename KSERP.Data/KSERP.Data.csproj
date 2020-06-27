@@ -7,6 +7,10 @@
   <ItemGroup>
     <Compile Remove="Migrations\20200627151412_Add_Customer_Entity.cs" />
     <Compile Remove="Migrations\20200627151412_Add_Customer_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20200627155705_Add_Customer_Care_History_Entity.cs" />
+    <Compile Remove="Migrations\20200627155705_Add_Customer_Care_History_Entity.Designer.cs" />
+    <Compile Remove="Migrations\20200627160454_Add_Customer_Care_History_Entity.cs" />
+    <Compile Remove="Migrations\20200627160454_Add_Customer_Care_History_Entity.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

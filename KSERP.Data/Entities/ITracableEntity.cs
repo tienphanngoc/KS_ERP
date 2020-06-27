@@ -4,7 +4,7 @@ using System.Text;
 
 namespace KSERP.Data.Entities
 {
-    public interface ITracableEntity
+    public abstract class TracableEntity
     {
         public DateTime CreatedAt { get; set; }
         public int CreatedBy { get; set; }

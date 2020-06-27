@@ -46,6 +46,7 @@ namespace KSERP.Data.EF
 
             //Sales
             modelBuilder.ApplyConfiguration(new CustomerConfigurations());
+            modelBuilder.ApplyConfiguration(new CustomerCareHistoryConfigurations());
         }
         public DbSet<Brand> Brands { get; set; }
 
