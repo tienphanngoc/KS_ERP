@@ -16,11 +16,12 @@ namespace KSERP.Data.Entities.Oganization
         public virtual Position Parent { get; set; }
         public virtual Department Department { get; set; }
         public virtual HashSet<Position> Childs { get; set; }
-
+        public virtual HashSet<PositionEmployee> PositionEmployees { get; set; }
         public Position()
         {
             Level = 0;
             Childs = new HashSet<Position>();
+            PositionEmployees = new HashSet<PositionEmployee>();
         }
     }
 }

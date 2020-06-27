@@ -40,6 +40,8 @@ namespace KSERP.Data.EF
             modelBuilder.ApplyConfiguration(new DealerConfigurations());
             modelBuilder.ApplyConfiguration(new DepartmentConfigurations());
             modelBuilder.ApplyConfiguration(new PositionConfigurations());
+            modelBuilder.ApplyConfiguration(new EmployeeConfigurations());
+            modelBuilder.ApplyConfiguration(new PositionEmployeeConfigurations());
         }
         public DbSet<Brand> Brands { get; set; }
 
