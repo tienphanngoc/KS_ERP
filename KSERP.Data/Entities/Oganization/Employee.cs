@@ -21,7 +21,7 @@ namespace KSERP.Data.Entities.Oganization
         public DateTime DateOfIssue { get; set; }
         public DateTime PlaceOfIssue { get; set; }
         public string ProfileImage { get; set; }
-
+        public EmployeeStatus Status { get; set; }
 
         //Navigation
         public virtual HashSet<PositionEmployee> PositionEmployees { get; set; }
@@ -32,6 +32,7 @@ namespace KSERP.Data.Entities.Oganization
             PositionEmployees = new HashSet<PositionEmployee>();
             Customers = new HashSet<Customer>();
             CustomerCareHistories = new HashSet<CustomerCareHistory>();
+            Status = EmployeeStatus.OTHER;
         }
     }
 }
