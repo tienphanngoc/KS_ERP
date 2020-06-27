@@ -21,5 +21,11 @@ namespace KSERP.Data.Entities.Oganization
 
         //Navigations
         public virtual Brand Brand { get; set; }
+        public virtual HashSet<Department> Departments { get; set; }
+
+        public Dealer()
+        {
+            Departments = new HashSet<Department>();
+        }
     }
 }
