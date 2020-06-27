@@ -13,9 +13,11 @@ namespace KSERP.Data.Entities.Car
         //Navigations
         public virtual Brand Brand { get; set; }
         public virtual HashSet<CarCategoryColor> CarCategoryColors { get; set; }
+        public virtual HashSet<CarModelCategory> CarModelCategories { get; set; }
         public CarCategory()
         {
             CarCategoryColors = new HashSet<CarCategoryColor>();
+            CarModelCategories = new HashSet<CarModelCategory>();
         }
     }
 }
