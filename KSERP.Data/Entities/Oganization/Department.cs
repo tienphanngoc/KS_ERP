@@ -12,9 +12,11 @@ namespace KSERP.Data.Entities.Oganization
 
         //Navigations
         public virtual Dealer Dealer { get; set; }
+        public virtual HashSet<Position> Positions { get; set; }
 
         public Department()
         {
+            Positions = new HashSet<Position>();
         }
     }
 }
