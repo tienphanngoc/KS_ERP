@@ -1,4 +1,5 @@
 ﻿using KSERP.Data.Entities.Car;
+using KSERP.Data.Entities.Oganization;
 using KSERP.Data.Enums;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,12 @@ namespace KSERP.Data.Entities
 
         //Navigations
         public virtual HashSet<CarCategory> CarCategories { get; set; }
+        public virtual HashSet<Dealer> Dealers { get; set; }
         public Brand()
         {
             Status = EntityStatus.ACTIVE;
             CarCategories = new HashSet<CarCategory>();
+            Dealers = new HashSet<Dealer>();
         }    
     }
 }

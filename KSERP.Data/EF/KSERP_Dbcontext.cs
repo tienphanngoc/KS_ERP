@@ -1,5 +1,6 @@
 ﻿using KSERP.Data.Configurations;
 using KSERP.Data.Configurations.Car;
+using KSERP.Data.Configurations.Organization;
 using KSERP.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -24,13 +25,19 @@ namespace KSERP.Data.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
             modelBuilder.ApplyConfiguration(new BrandConfigurations());
+
+            //Car
             modelBuilder.ApplyConfiguration(new CarCategoryConfigurations());
             modelBuilder.ApplyConfiguration(new CarColorConfigurations());
             modelBuilder.ApplyConfiguration(new CarCategoryColorConfigurations());
             modelBuilder.ApplyConfiguration(new CarModelCategoryConfigurations());
             modelBuilder.ApplyConfiguration(new CarModelColorConfigurations());
             modelBuilder.ApplyConfiguration(new CarModelConfigurations());
+
+            //Organization
+            modelBuilder.ApplyConfiguration(new DealerConfigurations());
         }
         public DbSet<Brand> Brands { get; set; }
 
