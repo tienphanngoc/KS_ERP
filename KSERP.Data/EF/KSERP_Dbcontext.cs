@@ -5,7 +5,11 @@ using KSERP.Data.Configurations.Sales;
 using KSERP.Data.Configurations.System;
 using KSERP.Data.Configurations.Utilities;
 using KSERP.Data.Entities;
+using KSERP.Data.Entities.Car;
+using KSERP.Data.Entities.Oganization;
+using KSERP.Data.Entities.Sales;
 using KSERP.Data.Entities.System;
+using KSERP.Data.Entities.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -70,9 +74,23 @@ namespace KSERP.Data.EF
 
             modelBuilder.Entity<IdentityRoleClaim<int>>().ToTable("RoleClaims");
             modelBuilder.Entity<IdentityUserToken<int>>().ToTable("UserTokens").HasKey(x => x.UserId);
-
         }
         public DbSet<Brand> Brands { get; set; }
-
+        public DbSet<CarModel> CarModels { get; set; }
+        public DbSet<CarCategory> CarCategories { get; set; }
+        public DbSet<CarColor> CarColors { get; set; }
+        public DbSet<CarModelCategory> CarModelCategories { get; set; }
+        public DbSet<CarModelColor> CarModelColors { get; set; }
+        public DbSet<Dealer> Dealers { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Position> Positions { get; set; }
+        public DbSet<PositionEmployee> PositionEmployees { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<CustomerCareHistory> CustomerCareHistories { get; set; }
+        public DbSet<AppConfig> AppConfigs { get; set; }
+        public DbSet<RolePosition> RolePositions { get; set; }
+        public DbSet<SystemActivity> SystemActivities { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
     }
 }
