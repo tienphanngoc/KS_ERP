@@ -17,4 +17,24 @@ namespace KSERP.Data.Configurations.System
             builder.Property(e => e.UserName).HasMaxLength(70);
         }
     }
+    public class RoleConfigurations : IEntityTypeConfiguration<Role>
+    {
+        public void Configure(EntityTypeBuilder<Role> builder)
+        {
+            builder.ToTable("Roles");
+            builder.Property(e => e.Name).HasMaxLength(100);
+            builder.Property(e => e.NormalizedName).HasMaxLength(100);
+        }
+    }
+    public class RolePositionConfiguration : IEntityTypeConfiguration<RolePosition>
+    {
+        public void Configure(EntityTypeBuilder<RolePosition> builder)
+        {
+            builder.ToTable("RolePositions");
+            builder.HasKey(e => new { e.RoleId, e.PositionId });
+
+            builder.HasOne(e => e.Role).WithMany(e => e.RolePositions).HasForeignKey(e => e.RoleId);
+            builder.HasOne(e => e.Position).WithMany(e => e.RolePositions).HasForeignKey(e => e.PositionId);
+        }
+    }
 }

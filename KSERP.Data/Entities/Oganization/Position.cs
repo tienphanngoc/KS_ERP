@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KSERP.Data.Entities.System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -17,11 +18,13 @@ namespace KSERP.Data.Entities.Oganization
         public virtual Department Department { get; set; }
         public virtual HashSet<Position> Childs { get; set; }
         public virtual HashSet<PositionEmployee> PositionEmployees { get; set; }
+        public virtual HashSet<RolePosition> RolePositions { get; set; }
         public Position()
         {
             Level = 0;
             Childs = new HashSet<Position>();
             PositionEmployees = new HashSet<PositionEmployee>();
+            RolePositions = new HashSet<RolePosition>();
         }
     }
 }

@@ -56,6 +56,11 @@ namespace KSERP.Data.EF
             //System
             modelBuilder.ApplyConfiguration(new AppConfigConfigurations());
             modelBuilder.ApplyConfiguration(new SystemActivityConfigurations());
+
+            //Identity
+            modelBuilder.ApplyConfiguration(new UserConfigurations());
+            modelBuilder.ApplyConfiguration(new RoleConfigurations());
+            modelBuilder.ApplyConfiguration(new RolePositionConfiguration());
         }
         public DbSet<Brand> Brands { get; set; }
 
