@@ -1,4 +1,5 @@
 ﻿using KSERP.Data.Entities.Sales;
+using KSERP.Data.Entities.System;
 using KSERP.Data.Enums;
 using System;
 using System.Collections.Generic;
@@ -22,11 +23,13 @@ namespace KSERP.Data.Entities.Oganization
         public DateTime PlaceOfIssue { get; set; }
         public string ProfileImage { get; set; }
         public EmployeeStatus Status { get; set; }
+        public int UserId { get; set; }
 
         //Navigation
         public virtual HashSet<PositionEmployee> PositionEmployees { get; set; }
         public virtual HashSet<Customer> Customers { get; set; }
         public virtual HashSet<CustomerCareHistory> CustomerCareHistories { get; set; }
+        public virtual User User { get; set; }
         public Employee()
         {
             PositionEmployees = new HashSet<PositionEmployee>();

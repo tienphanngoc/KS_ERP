@@ -21,6 +21,7 @@ namespace KSERP.Data.Configurations.Organization
             builder.Property(e => e.PlaceOfIssue).HasMaxLength(50);
             builder.Property(e => e.ProfileImage).HasMaxLength(70);
             builder.Property(e => e.PhoneNumber).HasMaxLength(15);
+            builder.HasOne(e => e.User).WithOne(e => e.Employee).HasForeignKey<Employee>(e => e.UserId);
         }
     }
 }
